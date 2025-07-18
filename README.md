@@ -2,7 +2,7 @@
 
 Implementación del autómata celular "Juego de la Vida" creado por John Horton Conway, desarrollado en Rust usando la biblioteca Raylib.
 
-![Demo del Juego de la Vida](demo.gif)
+![Demo del Juego de la Vida](gol.gif)
 
 ## Características
 
