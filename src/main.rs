@@ -72,44 +72,58 @@ fn main() {
     
     // Crear patrón inicial creativo con múltiples organismos
     
-    // Gliders en diferentes posiciones
+    add_gosper_glider_gun(&mut fb, 5, 5);
     add_glider(&mut fb, 5, 5);
-    add_glider(&mut fb, 100, 5);
-    add_glider(&mut fb, 5, 70);
-    add_glider(&mut fb, 90, 60);
     add_glider(&mut fb, 50, 10);
-    
-    // Still lifes (organismos que no cambian)
+    add_glider(&mut fb, 100, 5);
+
     add_block(&mut fb, 20, 15);
     add_beehive(&mut fb, 35, 15);
     add_loaf(&mut fb, 55, 15);
     add_tub(&mut fb, 75, 15);
-    add_block(&mut fb, 90, 15);
-    
-    // Oscillators (organismos que oscilan)
+    add_block(&mut fb, 95, 15);
+
+    add_glider(&mut fb, 100, 5);          
+    add_beehive(&mut fb, 95, 15);         
+    add_block(&mut fb, 110, 10);          
+    add_tub(&mut fb, 100, 20); 
+
+    add_blinker(&mut fb, 95, 40);         // oscilador pequeño
+    add_toad(&mut fb, 105, 45);           // oscilador mediano
+    add_loaf(&mut fb, 100, 50);           // patrón quieto
+    add_r_pentomino(&mut fb, 95, 55); 
+
+    add_r_pentomino(&mut fb, 10, 25);
+    add_diehard(&mut fb, 80, 25);
+
     add_blinker(&mut fb, 15, 35);
-    add_toad(&mut fb, 25, 35);
+    add_toad(&mut fb, 30, 35);
     add_beacon(&mut fb, 45, 35);
     add_blinker(&mut fb, 65, 35);
     add_blinker(&mut fb, 85, 35);
-    
-    // Pulsar (oscillator grande)
+
     add_pulsar(&mut fb, 20, 45);
-    
-    // Pentadecathlon (oscillator con período 15)
+
+    add_acorn(&mut fb, 10, 50);
     add_pentadecathlon(&mut fb, 50, 65);
-    
-    // LWSS (Light Weight Space Ship)
     add_lwss(&mut fb, 70, 70);
-    
-    // Patrones más complejos
-    add_r_pentomino(&mut fb, 10, 25);  // Crea muchos gliders
-    add_diehard(&mut fb, 80, 25);      // Desaparece después de 130 generaciones
-    add_acorn(&mut fb, 15, 50);        // Crece durante mucho tiempo
-    
-    // Gosper Glider Gun (genera gliders infinitamente)
-    add_gosper_glider_gun(&mut fb, 25, 5);
-    
+
+    add_beehive(&mut fb, 5, 75);
+    add_block(&mut fb, 25, 75);
+    add_glider(&mut fb, 45, 75);
+    add_blinker(&mut fb, 10, 78);
+    add_tub(&mut fb, 5, 85);
+
+    add_glider(&mut fb, 100, 65);           
+    add_blinker(&mut fb, 95, 75);
+    add_beehive(&mut fb, 85, 78);
+    add_loaf(&mut fb, 105, 75);
+    add_lwss(&mut fb, 90, 60);
+    add_toad(&mut fb, 90, 80);
+    add_block(&mut fb, 110, 80);
+    add_pentadecathlon(&mut fb, 80, 55);
+    add_glider(&mut fb, 100, 70);
+
     // Configurar velocidad de animación
     rl.set_target_fps(8); 
     
